@@ -1,0 +1,205 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+
+body {  
+    background-image: url(Black\ Simple\ Computing\ Video.jpg);  
+    background-attachment: fixed;  
+    background-size: cover; 
+    background-position: center;   
+    font-family: 'Arial', sans-serif;  
+    color: #333;  
+}  
+
+header {  
+    background-color: #010601c7;  
+    color: rgb(254, 253, 253);  
+    padding: 20px 0;  
+    text-align: center;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  
+}  
+
+h1 {  
+    font-size: 2.5em;  
+}  
+
+nav {  
+    position: relative;  
+}  
+
+.menu-toggle {  
+    display: none;  
+    flex-direction: column;  
+    cursor: pointer;  
+    margin-left: auto;  
+}  
+
+.menu-toggle .bar {  
+    height: 3px;  
+    width: 25px;  
+    background: rgb(236, 229, 229);  
+    margin: 3px 0;  
+}  
+
+.nav-list {  
+    display: flex;  
+    justify-content: center;  
+    list-style: none;  
+}  
+
+.nav-list li {  
+    margin: 0 15px;  
+}  
+
+nav a {  
+    color: rgb(242, 236, 236);  
+    text-decoration: none;  
+    transition: color 0.3s;  
+}  
+
+nav a:hover {  
+    color: #000000;  
+}  
+
+main {  
+    padding: 20px;  
+    max-width: 1200px;  
+    margin: auto;  
+}  
+
+section {  
+    margin: 20px 0;  
+    padding: 25px;  
+    border-radius: 10px;  
+    background-color: rgba(255, 248, 248, 0.85);  
+    box-shadow: 0 2px 10px rgba(163, 139, 139, 0.1);  
+}  
+
+h2 {  
+    border-bottom: 2px solid #000000;  
+    padding-bottom: 10px;  
+}  
+
+.servicios-grid {  
+    display: flex;  
+    justify-content: space-between;  
+    flex-wrap: wrap;  
+}  
+
+.servicio {  
+    border: 1px solid #000000;  
+    border-radius: 10px;  
+    margin: 10px;  
+    padding: 15px;  
+    text-align: center;  
+    background-color: #f9f9f9;  
+    width: calc(31% - 20px);  
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s;  
+}  
+
+.servicio:hover {  
+    transform: scale(1.05);  
+}  
+
+.servicio img {  
+    max-width: 100%;  
+    border-radius: 5px;  
+}  
+
+footer {  
+    text-align: center;  
+    padding: 20px;  
+    background-color: #010601c7;   
+    color: white;  
+    position: relative;  
+    bottom: 0;  
+    width: 100%;  
+}  
+
+#contacto {  
+    background-color: #f1ebeb;  
+    padding: 25px;  
+    border-radius: 10px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+}  
+
+.form-group {  
+    margin-bottom: 15px;  
+}  
+
+label {  
+    display: block;  
+    margin-bottom: 5px;  
+    font-weight: bold;  
+}  
+
+input[type="text"],  
+input[type="email"],  
+textarea {  
+    width: 100%;  
+    padding: 10px;  
+    border: 1px solid #ccc;  
+    border-radius: 5px;  
+    transition: border-color 0.3s;  
+}  
+
+input[type="text"]:focus,  
+input[type="email"]:focus,  
+textarea:focus {  
+    border-color: #011301;  
+    outline: none;  
+}  
+
+textarea {  
+    height: 100px;  
+    resize: vertical;  
+}  
+
+button {  
+    background-color: #010401;  
+    color: white;  
+    padding: 10px 15px;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    font-size: 16px;  
+    transition: background-color 0.3s;  
+}  
+
+button:hover {  
+    background-color: #4f5050;  
+}  
+
+@media screen and (max-width: 768px) {  
+    .nav-list {  
+        display: none;  
+        flex-direction: column;  
+        position: absolute;  
+        top: 60px;  
+        right: 0;  
+        background-color: rgba(0, 10, 0, 0.9);  
+        width: 100%;  
+        text-align: center;  
+        z-index: 10;  
+    }  
+
+    .nav-list.active {  
+        display: flex;  
+    }  
+
+    .menu-toggle {  
+        display: flex;  
+    }  
+
+    .servicios-grid {  
+        flex-direction: column;  
+        align-items: center;  
+    }  
+
+    .servicio {  
+        width: 90%;  
+    }  
+}
